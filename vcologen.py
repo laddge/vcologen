@@ -337,4 +337,5 @@ hi helpHyperTextJump ctermbg={c_colors[0]} ctermfg={c_colors[7]} cterm=NONE guib
 
 
 def generate(name, colors, template=TEMPLATE):
-    return template.format(name=name, colors=colors)
+    c_colors = [hex_to_256c(c) for c in colors]
+    return template.format(name=name, colors=colors, c_colors=c_colors)
