@@ -284,7 +284,7 @@ endif
 let g:colors_name = '{name}'
 set background=dark
 
-hi Normal ctermbg={c_colors[0]} ctermfg={c_colors[1]} cterm=NONE guibg={colors[0]} guifg={colors[1]} gui=NONE
+hi Normal ctermbg={c_colors[2]} ctermfg={c_colors[17]} cterm=NONE guibg={colors[2]} guifg={colors[17]} gui=NONE
 hi NonText ctermbg={c_colors[0]} ctermfg={c_colors[10]} cterm=NONE guibg={colors[0]} guifg={colors[10]} gui=NONE
 hi Comment ctermbg={c_colors[0]} ctermfg={c_colors[10]} cterm=NONE guibg={colors[0]} guifg={colors[10]} gui=NONE
 hi Conceal ctermbg={c_colors[0]} ctermfg={c_colors[10]} cterm=NONE guibg={colors[0]} guifg={colors[10]} gui=NONE
@@ -294,43 +294,43 @@ hi Statement ctermbg={c_colors[0]} ctermfg={c_colors[10]} cterm=NONE guibg={colo
 hi Operator ctermbg={c_colors[0]} ctermfg={c_colors[17]} cterm=NONE guibg={colors[0]} guifg={colors[17]} gui=NONE
 hi PreProc ctermbg={c_colors[0]} ctermfg={c_colors[10]} cterm=NONE guibg={colors[0]} guifg={colors[10]} gui=NONE
 hi Type ctermbg={c_colors[0]} ctermfg={c_colors[17]} cterm=NONE guibg={colors[0]} guifg={colors[17]} gui=NONE
-hi Special ctermbg=NONE ctermfg={c_colors[10]} cterm=NONE
-hi Special guibg=NONE guifg={colors[10]} gui=NONE ctermbg=NONE ctermfg={colors[3]} cterm=NONE
-hi Warning ctermbg=NONE ctermfg={c_colors[5]} cterm=NONE
-hi Warning guibg=NONE guifg={colors[5]} gui=NONE ctermbg=NONE ctermfg={colors[10]} cterm=NONE
-hi Todo ctermbg=NONE ctermfg={c_colors[11]} cterm=bold
-hi Todo guibg=NONE guifg={colors[11]} gui=bold ctermbg=NONE ctermfg={colors[17]} cterm=underline
+hi Special ctermbg=NONE ctermfg={c_colors[10]} cterm=NONE guibg=NONE guifg={colors[10]} gui=NONE
+hi Error ctermbg=NONE ctermfg=darkred cterm=NONE guibg=NONE guifg=darkred gui=NONE
+hi Warning ctermbg=NONE ctermfg={c_colors[5]} cterm=NONE guibg=NONE guifg={colors[5]} gui=NONE
+hi ModeMsg ctermbg=NONE ctermfg={c_colors[10]} cterm=NONE guibg=NONE guifg={colors[10]} gui=NONE
+hi Todo ctermbg=NONE ctermfg={c_colors[11]} cterm=bold guibg=NONE guifg={colors[11]} gui=bold
+hi Underlined ctermbg=NONE ctermfg={c_colors[17]} cterm=underline guibg=NONE guifg={colors[17]} gui=underline
 hi StatusLine ctermbg={c_colors[10]} ctermfg={c_colors[7]} cterm=NONE guibg={colors[10]} guifg={colors[7]} gui=NONE
 hi StatusLineNC ctermbg={c_colors[10]} ctermfg={c_colors[10]} cterm=NONE guibg={colors[10]} guifg={colors[10]} gui=NONE
 hi WildMenu ctermbg={c_colors[10]} ctermfg={c_colors[11]} cterm=NONE guibg={colors[10]} guifg={colors[11]} gui=NONE
 hi VertSplit ctermbg={c_colors[10]} ctermfg={c_colors[10]} cterm=NONE guibg={colors[10]} guifg={colors[10]} gui=NONE
-hi Title ctermbg=NONE ctermfg={c_colors[17]} cterm=bold
-hi Title guibg=NONE guifg={colors[17]} gui=bold ctermbg=NONE ctermfg={colors[10]} cterm=NONE
+hi Title ctermbg=NONE ctermfg={c_colors[17]} cterm=bold guibg=NONE guifg={colors[17]} gui=bold
+hi LineNr ctermbg=NONE ctermfg={c_colors[10]} cterm=NONE guibg=NONE guifg={colors[10]} gui=NONE
 hi CursorLineNr ctermbg={c_colors[10]} ctermfg={c_colors[7]} cterm=NONE guibg={colors[10]} guifg={colors[7]} gui=NONE
 hi Cursor ctermbg={c_colors[7]} ctermfg={c_colors[17]} cterm=NONE guibg={colors[7]} guifg={colors[17]} gui=NONE
-hi CursorLine ctermbg={c_colors[10]} ctermfg=NONE cterm=NONE
-hi CursorLine guibg={colors[10]} guifg=NONE gui=NONE ctermbg={colors[2]} ctermfg=NONE cterm=NONE
-hi SignColumn ctermbg=NONE ctermfg={c_colors[10]} cterm=NONE
-hi SignColumn guibg=NONE guifg={colors[10]} gui=NONE ctermbg={colors[10]} ctermfg=NONE cterm=NONE
-hi VisualNOS ctermbg={c_colors[10]} ctermfg=NONE cterm=NONE
-hi VisualNOS guibg={colors[10]} guifg=NONE gui=NONE ctermbg={colors[10]} ctermfg=NONE cterm=NONE
-hi PmenuSbar ctermbg={c_colors[10]} ctermfg=NONE cterm=NONE
-hi PmenuSbar guibg={colors[10]} guifg=NONE gui=NONE ctermbg={colors[10]} ctermfg={c_colors[7]} cterm=NONE
-hi PmenuThumb ctermbg={c_colors[11]} ctermfg=NONE cterm=NONE
-hi PmenuThumb guibg={colors[11]} guifg=NONE gui=NONE ctermbg=NONE ctermfg={colors[10]} cterm=NONE
+hi CursorLine ctermbg={c_colors[10]} ctermfg=NONE cterm=NONE guibg={colors[10]} guifg=NONE gui=NONE
+hi ColorColumn ctermbg={c_colors[2]} ctermfg=NONE cterm=NONE guibg={colors[2]} guifg=NONE gui=NONE
+hi SignColumn ctermbg=NONE ctermfg={c_colors[10]} cterm=NONE guibg=NONE guifg={colors[10]} gui=NONE
+hi Visual ctermbg={c_colors[10]} ctermfg=NONE cterm=NONE guibg={colors[10]} guifg=NONE gui=NONE
+hi VisualNOS ctermbg={c_colors[10]} ctermfg=NONE cterm=NONE guibg={colors[10]} guifg=NONE gui=NONE
+hi Pmenu ctermbg={c_colors[10]} ctermfg=NONE cterm=NONE guibg={colors[10]} guifg=NONE gui=NONE
+hi PmenuSbar ctermbg={c_colors[10]} ctermfg=NONE cterm=NONE guibg={colors[10]} guifg=NONE gui=NONE
+hi PmenuSel ctermbg={c_colors[10]} ctermfg={c_colors[7]} cterm=NONE guibg={colors[10]} guifg={colors[7]} gui=NONE
+hi PmenuThumb ctermbg={c_colors[11]} ctermfg=NONE cterm=NONE guibg={colors[11]} guifg=NONE gui=NONE
+hi FoldColumn ctermbg=NONE ctermfg={c_colors[10]} cterm=NONE guibg=NONE guifg={colors[10]} gui=NONE
 hi Folded ctermbg={c_colors[2]} ctermfg={c_colors[10]} cterm=NONE guibg={colors[2]} guifg={colors[10]} gui=NONE
-hi SpecialKey ctermbg=NONE ctermfg={c_colors[10]} cterm=NONE
-hi SpecialKey guibg=NONE guifg={colors[10]} gui=NONE ctermbg={colors[11]} ctermfg={c_colors[2]} cterm=NONE
+hi SpecialKey ctermbg=NONE ctermfg={c_colors[10]} cterm=NONE guibg=NONE guifg={colors[10]} gui=NONE
+hi IncSearch ctermbg={c_colors[11]} ctermfg={c_colors[2]} cterm=NONE guibg={colors[11]} guifg={colors[2]} gui=NONE
 hi Search ctermbg={c_colors[7]} ctermfg={c_colors[2]} cterm=NONE guibg={colors[7]} guifg={colors[2]} gui=NONE
-hi Directory ctermbg=NONE ctermfg={c_colors[7]} cterm=NONE
-hi Directory guibg=NONE guifg={colors[7]} gui=NONE ctermbg=NONE ctermfg={colors[11]} cterm=bold
-hi SpellBad ctermbg=NONE ctermfg={c_colors[3]} cterm=underline
-hi SpellBad guibg=NONE guifg={colors[3]} gui=underline ctermbg=NONE ctermfg={colors[4]} cterm=underline
-hi SpellLocal ctermbg=NONE ctermfg={c_colors[5]} cterm=underline
-hi SpellLocal guibg=NONE guifg={colors[5]} gui=underline ctermbg={colors[2]} ctermfg=NONE cterm=NONE
+hi Directory ctermbg=NONE ctermfg={c_colors[7]} cterm=NONE guibg=NONE guifg={colors[7]} gui=NONE
+hi MatchParen ctermbg=NONE ctermfg={c_colors[11]} cterm=bold guibg=NONE guifg={colors[11]} gui=bold
+hi SpellBad ctermbg=NONE ctermfg=darkred cterm=underline guibg=NONE guifg=darkred gui=underline
+hi SpellCap ctermbg=NONE ctermfg={c_colors[4]} cterm=underline guibg=NONE guifg={colors[4]} gui=underline
+hi SpellLocal ctermbg=NONE ctermfg={c_colors[5]} cterm=underline guibg=NONE guifg={colors[5]} gui=underline
+hi QuickFixLine ctermbg={c_colors[2]} ctermfg=NONE cterm=NONE guibg={colors[2]} guifg=NONE gui=NONE
 hi DiffAdd ctermbg={c_colors[10]} ctermfg={c_colors[4]} cterm=NONE guibg={colors[10]} guifg={colors[4]} gui=NONE
-hi DiffChange ctermbg={c_colors[10]} ctermfg=NONE cterm=NONE
-hi DiffChange guibg={colors[10]} guifg=NONE gui=NONE ctermbg={colors[10]} ctermfg={c_colors[3]} cterm=NONE
+hi DiffChange ctermbg={c_colors[10]} ctermfg=NONE cterm=NONE guibg={colors[10]} guifg=NONE gui=NONE
+hi DiffDelete ctermbg={c_colors[10]} ctermfg=darkred cterm=NONE guibg={colors[10]} guifg=darkred gui=NONE
 hi DiffText ctermbg={c_colors[10]} ctermfg={c_colors[5]} cterm=NONE guibg={colors[10]} guifg={colors[5]} gui=NONE
 hi helpHyperTextJump ctermbg={c_colors[0]} ctermfg={c_colors[7]} cterm=NONE guibg={colors[0]} guifg={colors[7]} gui=NONE
 """
