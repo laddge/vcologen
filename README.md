@@ -12,31 +12,22 @@ pip install vcologen
 import vcologen
 
 name = "mytheme"
-colors = [
-    "#000000",  # background
-    "#ffffff",  # foreground
-    "#000000",  # black
-    "#800000",  # red
-    "#008000",  # green
-    "#808000",  # yellow
-    "#000080",  # blue
-    "#800080",  # magenta
-    "#008080",  # cyan
-    "#c0c0c0",  # white
-    "#808080",  # gray
-    "#ff0000",  # light red
-    "#00ff00",  # light green
-    "#ffff00",  # light yellow
-    "#0000ff",  # light blue
-    "#ff00ff",  # light magenta
-    "#00ffff",  # light cyan
-    "#ffffff",  # bright white
-]
+vcg = vcologen.Generator(name)
 
-generated = vcologen.generate(name, colors)
+vcg.theme = "dark"
+vcg.bg = "#000000"  # background
+vcg.fg = "#ffffff"  # foreground
+vcg.c1 = "#ff0000"  # color 1
+vcg.c2 = "#00ff00"  # color 2
+vcg.c3 = "#ffff00"  # color 3
+vcg.c4 = "#0000ff"  # color 4
+vcg.c5 = "#ff00ff"  # color 5
+vcg.c6 = "#00ffff"  # color 6
+vcg.cm = "#797979"  # comment color
+vcg.cl = "#333333"  # cursor line color
 
-with open("mytheme.vim", "w") as f:
-    f.write(generated)
+path = "colors/mytheme.vim"
+vcg.generate(path)
 ```
 
 ## License
