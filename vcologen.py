@@ -360,11 +360,11 @@ set background={{ theme }}
         hexcolor = hexcolor.strip("#")
         rgb = (int(hexcolor[:2], 16), int(hexcolor[2:4], 16), int(hexcolor[4:], 16))
         color = 0
-        min_dist = 765
+        min_dist = 195075
         for i in range(256):
             dist = 0
             for j in range(3):
-                dist += ((termcolors[i][j] - rgb[j]) ** 2) ** 0.5
+                dist += (termcolors[i][j] - rgb[j]) ** 2
             if dist < min_dist:
                 color = i
                 min_dist = dist
