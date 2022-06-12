@@ -94,7 +94,7 @@ set background={{ theme }}
     ["VertSplit", cl, "NONE", "NONE"],
     ["Visual", "NONE", cl, "NONE"],
 ]) }}
-        """
+"""
 
     def cuicolor(self, hexcolor):
         if hexcolor[0] != "#":
